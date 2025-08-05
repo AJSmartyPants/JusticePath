@@ -1,0 +1,121 @@
+[
+  {
+    "country": "United States",
+    "title": "Freedom of Speech",
+    "description": "Placeholder: The right to express any opinions without censorship or restraint.",
+    "category": "Bill of Rights",
+    "article": "First Amendment"
+  },
+  {
+    "country": "United States",
+    "title": "Right to Bear Arms",
+    "description": "Placeholder: The right to own and carry weapons.",
+    "category": "Bill of Rights",
+    "article": "Second Amendment"
+  },
+  {
+    "country": "United States",
+    "title": "Right Against Unreasonable Searches",
+    "description": "Placeholder: Protection against random or invasive searches without a warrant.",
+    "category": "Bill of Rights",
+    "article": "Fourth Amendment"
+  },
+  {
+    "country": "India",
+    "title": "Right to Equality",
+    "description": "Placeholder: No discrimination by the State on the basis of religion, race, caste, sex, or place of birth.",
+    "category": "Fundamental Rights",
+    "article": "Article 14"
+  },
+  {
+    "country": "India",
+    "title": "Right to Freedom",
+    "description": "Placeholder: Includes freedom of speech, expression, and peaceful assembly.",
+    "category": "Fundamental Rights",
+    "article": "Article 19"
+  },
+  {
+    "country": "India",
+    "title": "Right to Constitutional Remedies",
+    "description": "Placeholder: Right to approach the court if any fundamental right is violated.",
+    "category": "Fundamental Rights",
+    "article": "Article 32"
+  },
+  {
+    "country": "Kenya",
+    "title": "Right to Life",
+    "description": "Placeholder: Every person has the right to life and it shall be protected by law.",
+    "category": "Bill of Rights",
+    "article": "Article 26"
+  },
+  {
+    "country": "Kenya",
+    "title": "Right to Education",
+    "description": "Placeholder: Every child has the right to free and compulsory basic education.",
+    "category": "Bill of Rights",
+    "article": "Article 43"
+  },
+  {
+    "country": "Kenya",
+    "title": "Freedom of Conscience, Religion, Belief and Opinion",
+    "description": "Placeholder: Every person has the right to freedom of thought, conscience, religion, and belief.",
+    "category": "Bill of Rights",
+    "article": "Article 32"
+  },
+  {
+    "country": "Canada",
+    "title": "Right to Mobility",
+    "description": "Placeholder: Every citizen has the right to enter, remain in, and leave Canada.",
+    "category": "Charter of Rights and Freedoms",
+    "article": "Section 6"
+  },
+  {
+    "country": "Canada",
+    "title": "Freedom of Thought, Belief, and Expression",
+    "description": "Placeholder: Every individual is free to think, believe, and express opinions.",
+    "category": "Charter of Rights and Freedoms",
+    "article": "Section 2"
+  },
+  {
+    "country": "Brazil",
+    "title": "Right to Health",
+    "description": "Placeholder: Health is a right of all and a duty of the State.",
+    "category": "Constitutional Rights",
+    "article": "Article 196"
+  },
+  {
+    "country": "Brazil",
+    "title": "Right to Education",
+    "description": "Placeholder: Education is a right for all and shall be promoted with the cooperation of society.",
+    "category": "Constitutional Rights",
+    "article": "Article 205"
+  },
+  {
+    "country": "South Africa",
+    "title": "Right to Human Dignity",
+    "description": "Placeholder: Everyone has inherent dignity and the right to have their dignity respected.",
+    "category": "Bill of Rights",
+    "article": "Section 10"
+  },
+  {
+    "country": "South Africa",
+    "title": "Right to Housing",
+    "description": "Placeholder: Everyone has the right to access adequate housing.",
+    "category": "Bill of Rights",
+    "article": "Section 26"
+  },
+  {
+    "country": "Philippines",
+    "title": "Right to Due Process",
+    "description": "Placeholder: No person shall be deprived of life, liberty, or property without due process of law.",
+    "category": "Bill of Rights",
+    "article": "Article III, Section 1"
+  },
+  {
+    "country": "Philippines",
+    "title": "Right to Free Public Education",
+    "description": "Placeholder: The State shall provide free public education in the elementary and high school levels.",
+    "category": "Constitutional Rights",
+    "article": "Article XIV, Section 2"
+  }
+]
