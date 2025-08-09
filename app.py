@@ -4,7 +4,8 @@ from geopy.geocoders import Nominatim  # To convert geographic coordinates into 
 from streamlit_option_menu import option_menu  # To create a styled navigation menu in the sidebar
 import streamlit_js_eval  # To run JavaScript inside Streamlit and get geolocation
 import pycountry  # To convert country codes (like 'us') into full country names ('United States')
-import json  # To load and work with data stored in a JSON file (like rights.json)
+import json  # To load and work with data stored in a JSON file (like rights.json) 
+from huggingface_hub import InferenceClient #The huggingface_hub library includes an InferenceClient that automatically picks the best AI provider and sends your request to the right place — so you don’t have to manage different APIs or worry about which service to use.
 
 # Detect user location early so it can be reused on different pages
 location = streamlit_js_eval.get_geolocation()  # This gets the user's latitude and longitude from the browser
@@ -98,16 +99,30 @@ elif page == "Search":
 
 # CHATBOT PAGE
 elif page == "Chatbot":
-    st.title("JusticePath Chatbot")  # Title for the chatbot page
+    st.title("JusticePath Chatbot")  # Display a title at the top of the chatbot page
 
-    user_input = st.text_input("Ask a legal question")  # Input box for user’s question
+    # Create a text input box where the user can type their legal question
+    user_input = st.text_input("Ask a legal question")
 
-    if user_input:  # If the user typed something
-        # Send the question to the OpenAI GPT model and get a response
-        response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",  # Specify the GPT model version
-            messages=[{"role": "user", "content": user_input}]  # Provide the user’s question as a message
+    # Only run the chatbot if the user has typed something into the box
+    if user_input:
+        # Create a connection to Hugging Face's API using the InferenceClient
+        # The token is your personal access key from Hugging Face — it allows you to use their models
+        client = InferenceClient(token='YOUR_ACCESS_TOKEN')
+
+        # Send a chat completion request to the chosen model
+        # 'deepseek-ai/DeepSeek-V3-0324' is the name of the AI model we're using
+        # The 'messages' list contains the conversation so far. Here, we only send the user's message
+        completion = client.chat.completions.create(
+            model="deepseek-ai/DeepSeek-V3-0324",  # The model we want to use
+            messages=[
+                {
+                    "role": "user",  # Role is 'user' because this message comes from the user
+                    "content": user_input  # The actual text of the user's question
+                }
+            ],
         )
 
-        # Display the chatbot's reply
-        st.write(response['choices'][0]['message']['content'])
+        # Display the AI's reply on the page
+        # 'completion.choices[0].message.content' contains the generated text from the model
+        st.write(completion.choices[0].message.content)
